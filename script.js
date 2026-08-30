@@ -1,1 +1,45 @@
-const questBtn=document.getElementById('acceptQuest');const questStatus=document.getElementById('questStatus');questBtn?.addEventListener('click',()=>{questBtn.textContent='RETO ACEPTADO ✓';questBtn.disabled=true;questStatus.textContent='+100 XP reservado. En la siguiente fase podrás subir el resultado y compartirlo.'});document.querySelectorAll('.side').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.side').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');document.getElementById('battleResult').textContent=btn.dataset.choice==='create'?'Tu voto: CREAR · Pulso demo 58% crear / 42% competir':'Tu voto: COMPETIR · Pulso demo 42% competir / 58% crear'})});const ideas={CREAR:'Tu primera ruta: customiza una camiseta, haz un collage digital o prueba modelado.',EXPLORAR:'Tu primera ruta: fotografía urbana, geocaching o una caminata visual por tu ciudad.',COMPETIR:'Tu primera ruta: speedcubing, ajedrez rápido o un reto de edición de video.',COLECCIONAR:'Tu primera ruta: stickers, cartas, miniaturas, vinilos o fotografía temática.',APRENDER:'Tu primera ruta: dibujo digital, edición de audio, animación o un idioma.'};document.querySelectorAll('.chips button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.chips button').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.getElementById('hobbyResult').textContent=ideas[btn.textContent.trim()]}));
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener('click', () => {
+    mainNav.classList.toggle('open');
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!expanded));
+  });
+}
+
+const questBtn = document.getElementById('acceptQuest');
+const questStatus = document.getElementById('questStatus');
+if (questBtn && questStatus) {
+  questBtn.addEventListener('click', () => {
+    questBtn.disabled = true;
+    questBtn.textContent = 'RETO ACTIVADO';
+    questStatus.textContent = 'Pulso demo confirmado: tu intervención creativa puede convertirse en pieza destacada de la galería.';
+  });
+}
+
+const battleResult = document.getElementById('battleResult');
+document.querySelectorAll('.battle-option').forEach((button) => {
+  button.addEventListener('click', () => {
+    battleResult.textContent = button.dataset.choice === 'create'
+      ? 'Pulso demo: CREAR 58% · COMPETIR 42%'
+      : 'Pulso demo: COMPETIR 42% · CREAR 58%';
+  });
+});
+
+const ideas = {
+  CREAR: 'Prueba inicial: customizar una prenda, hacer collage digital o intervenir una libreta con lenguaje visual propio.',
+  EXPLORAR: 'Prueba inicial: hacer una ruta fotográfica urbana, documentar vitrinas o rastrear espacios con personalidad visual.',
+  COMPETIR: 'Prueba inicial: speedcubing, torneo exprés de videojuego, reto de edición o desafío creativo por tiempo.',
+  COLECCIONAR: 'Prueba inicial: figuras, cartas, stickers, objetos vintage, sneakers o piezas visuales con valor narrativo.',
+  APRENDER: 'Prueba inicial: dibujo digital, mezcla musical, modelado 3D, fotografía o una habilidad nueva con progresión semanal.'
+};
+
+document.querySelectorAll('.chips button').forEach((button) => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('.chips button').forEach((item) => item.classList.remove('active'));
+    button.classList.add('active');
+    document.getElementById('hobbyResult').textContent = ideas[button.textContent.trim()];
+  });
+});

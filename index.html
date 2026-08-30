@@ -1,1 +1,104 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Youth Nexus</title><link rel="stylesheet" href="styles.css"></head><body><main id="app"></main><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0B0F19">
+  <meta name="description" content="Youth Nexus: juegos, hobbies, estilo, tendencias, retos y cultura digital para jóvenes.">
+  <title>Youth Nexus — Juega, crea, descubre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Youth Nexus, inicio">
+      <span class="mark"><i></i><b>YN</b></span>
+      <span class="brand-word">YOUTH <strong>NEXUS</strong></span>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#juega">Juega</a><a href="#estilo">Estilo</a><a href="#crea">Crea</a><a href="#trending">Trending</a><a href="#descubre">Descubre</a>
+    </nav>
+    <button class="level" type="button">LVL 01 <span>●</span></button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> TU ESPACIO · TU ESTILO · TU JUEGO</div>
+        <h1>¿Qué quieres<br><em>descubrir hoy?</em></h1>
+        <p>Un punto de encuentro para jugar, crear, explorar tendencias y encontrar la próxima obsesión que no sabías que estabas buscando.</p>
+        <div class="actions">
+          <a class="btn primary" href="#quest">EMPIEZA TU SIDE QUEST <b>↗</b></a>
+          <a class="btn ghost" href="#trending">ABRE EL TREND RADAR</a>
+        </div>
+        <div class="signal-row" aria-label="Indicadores de experiencia">
+          <div><strong>05</strong><span>Mundos</span></div>
+          <div><strong>24/7</strong><span>Radar activo</span></div>
+          <div><strong>∞</strong><span>Ideas por descubrir</span></div>
+        </div>
+      </div>
+
+      <div class="nexus-scene" aria-label="Núcleo visual Youth Nexus">
+        <div class="scene-grid"></div>
+        <div class="object sneaker">⌁<small>STYLE</small></div>
+        <div class="object pad">✣<small>PLAY</small></div>
+        <div class="object camera">◉<small>CREATE</small></div>
+        <div class="object spark">✦</div>
+        <div class="nucleus">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+          <div class="core"><span>N</span><i></i><strong>NEXUS</strong></div>
+        </div>
+        <div class="micro-label ml1">TREND SIGNAL</div><div class="micro-label ml2">NEW DROP</div>
+      </div>
+    </section>
+
+    <section class="pulse shell" aria-label="Pulso de la plataforma">
+      <span class="pulse-title">NEXUS PULSE</span>
+      <div class="pulse-item"><b>⚡ BATTLE</b><span>Crear vs competir</span></div>
+      <div class="pulse-item"><b>🔥 TREND #01</b><span>Retro digital</span></div>
+      <div class="pulse-item"><b>✦ SIDE QUEST</b><span>Transforma algo viejo</span></div>
+      <small>BETA</small>
+    </section>
+
+    <section class="worlds shell" aria-label="Explora mundos">
+      <a id="juega" class="world w-play" href="#battle"><span class="world-no">01</span><div class="world-icon"><i>+</i> <i>+</i></div><div><h2>JUEGA</h2><p>Gaming, rankings, descubrimientos y desafíos.</p></div><b>↗</b></a>
+      <a id="estilo" class="world w-style" href="#style"><span class="world-no">02</span><div class="world-icon shoe">⌁</div><div><h2>ESTILO</h2><p>Estéticas, outfits, sneakers y cultura visual.</p></div><b>↗</b></a>
+      <a id="crea" class="world w-create" href="#quest"><span class="world-no">03</span><div class="world-icon">✎</div><div><h2>CREA</h2><p>Arte, DIY, fotografía, diseño y proyectos.</p></div><b>↗</b></a>
+      <a id="trending" class="world w-trend" href="#radar"><span class="world-no">04</span><div class="world-icon bars"><i></i><i></i><i></i></div><div><h2>TRENDING</h2><p>Lo que sube, lo que explota y lo que desaparece.</p></div><b>↗</b></a>
+      <a id="descubre" class="world w-discover" href="#hobby"><span class="world-no">05</span><div class="world-icon">?</div><div><h2>DESCUBRE</h2><p>Tests, hobbies, gustos y nuevas obsesiones.</p></div><b>↗</b></a>
+    </section>
+
+    <section id="radar" class="section shell">
+      <div class="section-head"><div><span class="kicker">TREND RADAR</span><h2>AHORA MISMO</h2></div><small><i></i> RADAR DEMO</small></div>
+      <div class="trend-grid">
+        <article class="trend-card"><div class="trend-art chrome"><span>01</span><b>Y2K+</b></div><div class="trend-meta"><span>↑ SUBIENDO</span><small>ESTÉTICA</small></div><h3>Retro digital</h3><p>Chrome, pixel art, interfaces Y2K y nostalgia tecnológica reinterpretada.</p></article>
+        <article class="trend-card"><div class="trend-art craft"><span>02</span><b>DIY</b></div><div class="trend-meta"><span>⚡ VIRAL</span><small>HOBBIES</small></div><h3>Microhobbies creativos</h3><p>Actividades cortas, manuales, económicas y fáciles de compartir.</p></article>
+        <article class="trend-card"><div class="trend-art social"><span>03</span><b>CO-OP</b></div><div class="trend-meta"><span>◉ RADAR</span><small>GAMING</small></div><h3>Gaming social</h3><p>Experiencias pensadas para jugar, construir y volver con amigos.</p></article>
+      </div>
+    </section>
+
+    <section id="quest" class="quest shell">
+      <div class="quest-copy"><span class="kicker">SIDE QUEST · #001</span><h2>TRANSFORMA ALGO<br>QUE YA TENÍAS.</h2><p>Elige unos tenis, una camiseta, una libreta o un accesorio y conviértelo en una pieza única. Documenta el antes, el proceso y el resultado.</p><button class="btn primary" id="acceptQuest">ACEPTAR RETO <b>+100 XP</b></button><p id="questStatus" class="status" aria-live="polite"></p></div>
+      <div class="quest-ticket"><span class="ticket-top">NEXUS / CREATIVE MISSION</span><strong>01</strong><div class="ticket-object">✦</div><h3>MAKE IT<br>YOURS.</h3><div class="ticket-info"><span>DIFICULTAD <b>●●○</b></span><span>TIEMPO <b>45–90 MIN</b></span></div></div>
+    </section>
+
+    <section id="battle" class="section shell battle-section">
+      <div class="section-head"><div><span class="kicker">BATTLE</span><h2>ELIGE TU LADO</h2></div><small>Vota · compara · vuelve</small></div>
+      <div class="battle"><button class="side create" data-choice="create"><span>A / CREATIVE MODE</span><strong>CREAR</strong><small>Construir, diseñar, experimentar</small></button><div class="vs">VS</div><button class="side compete" data-choice="compete"><span>B / COMPETITIVE MODE</span><strong>COMPETIR</strong><small>Subir nivel, dominar, ganar</small></button></div>
+      <div class="result" id="battleResult">Elige una opción para ver el pulso demo.</div>
+    </section>
+
+    <section id="style" class="style-lab shell">
+      <div class="style-copy"><span class="kicker">STYLE ID</span><h2>NO SIGAS UNA ESTÉTICA.<br><em>ENCUENTRA LA TUYA.</em></h2><p>Una identidad construida a partir de tus gustos en moda, música, color, hobbies y cultura digital.</p><button class="btn ghost" type="button">TEST COMPLETO · PRÓXIMAMENTE</button></div>
+      <div class="style-profile"><div class="profile-head"><span>STYLE PROFILE / DEMO</span><b>YN-001</b></div><div class="meter"><span>STREET</span><i style="--v:78%"></i><b>78%</b></div><div class="meter"><span>GAMER</span><i style="--v:63%"></i><b>63%</b></div><div class="meter"><span>ART KID</span><i style="--v:52%"></i><b>52%</b></div><div class="meter"><span>VINTAGE</span><i style="--v:31%"></i><b>31%</b></div></div>
+    </section>
+
+    <section id="hobby" class="hobby shell"><span class="kicker dark-kicker">HOBBY FINDER</span><h2>¿ABURRIDO?<br><span>PERFECTO.</span></h2><p>Ese puede ser el inicio de algo nuevo.</p><div class="chips"><button>CREAR</button><button>EXPLORAR</button><button>COMPETIR</button><button>COLECCIONAR</button><button>APRENDER</button></div><div id="hobbyResult">Selecciona una ruta y descubre qué probar primero.</div></section>
+  </main>
+
+  <footer><a class="brand" href="#inicio"><span class="mark"><b>YN</b></span><span class="brand-word">YOUTH <strong>NEXUS</strong></span></a><span>JUEGA · CREA · DESCUBRE · COMPARTE</span><span>© 2026 · BETA</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>

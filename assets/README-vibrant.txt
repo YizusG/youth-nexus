@@ -1,0 +1,1 @@
+Nueva serie visual vibrante para Youth Nexus. Assets WebP 1672x941, calidad alta, paleta variada por sección.

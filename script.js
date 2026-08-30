@@ -1,3 +1,8 @@
+const sharpCss = document.createElement('link');
+sharpCss.rel = 'stylesheet';
+sharpCss.href = 'sharp.css?v=2';
+document.head.appendChild(sharpCss);
+
 const menuToggle = document.getElementById('menuToggle');
 const mainNav = document.getElementById('mainNav');
 
